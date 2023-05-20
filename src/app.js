@@ -9,7 +9,7 @@ import MongoStore from "connect-mongo";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-import { MONGODB_URI, PORT } from "./config.js";
+import { MONGO_URL, PORT } from "./config.js";
 
 import indexRoutes from "./routes/index.routes.js";
 import notesRoutes from "./routes/notes.routes.js";
@@ -43,7 +43,7 @@ app.use(
     secret: "secret",
     resave: true,
     saveUninitialized: true,
-    store: MongoStore.create({ mongoUrl: MONGODB_URI }),
+    store: MongoStore.create({ mongoUrl: MONGO_URL }),
   })
 );
 app.use(passport.initialize());

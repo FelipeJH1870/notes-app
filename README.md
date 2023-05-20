@@ -20,13 +20,13 @@ npm run dev # run in development mode
 npm start # run in production mode
 ```
 
-> You need to have Mongodb installed Locally or stablish a MONGODB_URI environment variable in order to connect to any mongodb instance (using Mongodb Atlas for example)
+> You need to have Mongodb installed Locally or stablish a MONGO_URL environment variable in order to connect to any mongodb instance (using Mongodb Atlas for example)
 
 ### Environment Variables
 
 This app needs the following environment Variables
 
-- `MONGODB_URI` this is the Mongodb URI string
+- `MONGO_URL` this is the Mongodb URI string
 - `PORT` the server http port for the application
 - `NODE_ENV` node environment
 
